@@ -76,20 +76,45 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.6, delay: service.delay, ease: [0.16, 1, 0.3, 1] }}
-              className="group bg-bg-card border border-border-default rounded-xl p-8 flex flex-col items-start transition-all duration-200 hover:-translate-y-1 hover:border-border-mid hover:bg-[#111111]"
+              whileHover={{ 
+                y: -8, 
+                scale: 1.02,
+                boxShadow: "0 0 30px rgba(255,119,28,0.25), 0 0 60px rgba(255,119,28,0.10), 0 8px 32px rgba(0,0,0,0.4)",
+                borderColor: "rgba(255,119,28,0.5)",
+                transition: { duration: 0.15, ease: [0.16, 1, 0.3, 1] }
+              }}
+              className="group relative bg-bg-card border border-border-default rounded-xl p-8 flex flex-col items-start overflow-hidden cursor-pointer"
+              style={{ transition: "background 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, transform 0.15s ease" }}
             >
-              <div className="mb-6 text-border-strong group-hover:text-accent transition-colors duration-200">
+              {/* Orange ambient glow overlay on hover */}
+              <div 
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none"
+                style={{ 
+                  background: "radial-gradient(ellipse at 50% 0%, rgba(255,119,28,0.12) 0%, rgba(255,119,28,0.04) 40%, transparent 70%)",
+                  transition: "opacity 0.15s ease"
+                }}
+              />
+              {/* Bottom edge ambient line */}
+              <div 
+                className="absolute bottom-0 left-[10%] right-[10%] h-[1px] opacity-0 group-hover:opacity-100 pointer-events-none"
+                style={{ 
+                  background: "linear-gradient(90deg, transparent, rgba(255,119,28,0.6), transparent)",
+                  transition: "opacity 0.15s ease"
+                }}
+              />
+
+              <div className="relative mb-6 text-border-strong group-hover:text-[#FF771C] transition-all duration-150 group-hover:scale-110 group-hover:drop-shadow-[0_0_12px_rgba(255,119,28,0.5)]">
                 <service.icon size={48} strokeWidth={1.5} />
               </div>
-              <h3 className="font-display text-[24px] font-bold leading-[1.2] tracking-tight text-text-primary mb-4">
+              <h3 className="relative font-display text-[24px] font-bold leading-[1.2] tracking-tight text-text-primary mb-4 group-hover:text-white transition-colors duration-150">
                 {t(lang, service.titleKey)}
               </h3>
-              <p className="font-body text-[14px] leading-[1.6] text-text-secondary mb-6 line-clamp-3">
+              <p className="relative font-body text-[14px] leading-[1.6] text-text-secondary mb-6 line-clamp-3 group-hover:text-[#a0a0a5] transition-colors duration-150">
                 {t(lang, service.descKey)}
               </p>
               <Link 
                 href="#contact" 
-                className="mt-auto font-body text-[14px] font-medium text-accent hover:underline transition-all"
+                className="relative mt-auto font-body text-[14px] font-medium text-accent hover:underline transition-all duration-150 group-hover:text-[#FF771C] group-hover:drop-shadow-[0_0_8px_rgba(255,119,28,0.4)]"
               >
                 Learn More &rarr;
               </Link>

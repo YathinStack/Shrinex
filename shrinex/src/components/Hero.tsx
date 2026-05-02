@@ -83,7 +83,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
         >
-          <StrokeFill text="Shrinex" duration={3} />
+          <StrokeFill text={t(lang, "hero_shrinex")} duration={3} />
 
           {/* Spacer between title and subtitle */}
           <div className="mt-16" />

@@ -10,6 +10,7 @@ export const translations = {
     nav_cta: "Get Started",
 
     // Hero
+    hero_shrinex: "Shrinex",
     hero_label: "Web Design Agency — Andhra Pradesh",
     hero_cta_primary: "Book a Free Call",
     hero_cta_secondary: "See Our Services",
@@ -140,6 +141,20 @@ export const translations = {
     ],
     plan_3_cta: "Let's Talk",
 
+    // Portfolio
+    portfolio_label: "Our Portfolio",
+    portfolio_title: "Peek Into Our Work",
+    portfolio_desc: "Click any project to see it live.",
+    portfolio_view: "View Live →",
+    portfolio_1_title: "Fluid Simulation",
+    portfolio_1_desc: "WebGL Interaction",
+    portfolio_2_title: "Liquid Chrome",
+    portfolio_2_desc: "WebGL 2.0 Animation",
+    portfolio_3_title: "Vanta Vapor",
+    portfolio_3_desc: "WebGL Smoke Effect",
+    portfolio_4_title: "Russian Samurai",
+    portfolio_4_desc: "GSAP Animation",
+
     // Testimonials
     testimonials_label: "Client Stories",
     testimonials_title: "What Our Clients Say",
@@ -184,6 +199,7 @@ export const translations = {
     nav_cta: "ప్రారంభించండి",
 
     // Hero
+    hero_shrinex: "శ్రీనెక్స్",
     hero_label: "వెబ్ డిజైన్ ఏజెన్సీ — ఆంధ్రప్రదేశ్",
     hero_cta_primary: "ఉచిత కాల్ బుక్ చేయండి",
     hero_cta_secondary: "మా సేవలు చూడండి",
@@ -281,6 +297,20 @@ export const translations = {
     plan_3_features: ["ఈ-కామర్స్ / వెబ్ యాప్", "పూర్తి కస్టమ్ డెవలప్మెంట్", "బహుభాషా మద్దతు", "నిరంతర నిర్వహణ", "ప్రాధాన్యత డెలివరీ", "అంకితమైన పాయింట్ ఆఫ్ కాంటాక్ట్"],
     plan_3_cta: "మాట్లాడదాం",
 
+    // Portfolio
+    portfolio_label: "మా పోర్ట్‌ఫోలియో",
+    portfolio_title: "మా పనిని వీక్షించండి",
+    portfolio_desc: "లైవ్‌లో చూడటానికి ఏదైనా ప్రాజెక్ట్‌పై క్లిక్ చేయండి.",
+    portfolio_view: "లైవ్ చూడండి →",
+    portfolio_1_title: "ఫ్లూయిడ్ సిమ్యులేషన్",
+    portfolio_1_desc: "వెబ్జీఎల్ ఇంటరాక్షన్",
+    portfolio_2_title: "లిక్విడ్ క్రోమ్",
+    portfolio_2_desc: "వెబ్జీఎల్ 2.0 యానిమేషన్",
+    portfolio_3_title: "వాంటా వేపర్",
+    portfolio_3_desc: "వెబ్జీఎల్ స్మోక్ ఎఫెక్ట్",
+    portfolio_4_title: "రష్యన్ సమురాయ్",
+    portfolio_4_desc: "జిసాప్ యానిమేషన్",
+
     // Testimonials
     testimonials_label: "క్లయింట్ కథలు",
     testimonials_title: "మా క్లయింట్లు ఏమి చెప్తారు",
@@ -321,6 +351,7 @@ export const translations = {
     nav_cta: "शुरू करें",
 
     // Hero
+    hero_shrinex: "श्रीनेक्स",
     hero_label: "वेब डिज़ाइन एजेंसी — आंध्र प्रदेश",
     hero_cta_primary: "मुफ़्त कॉल बुक करें",
     hero_cta_secondary: "हमारी सेवाएं देखें",
@@ -417,6 +448,20 @@ export const translations = {
     plan_3_features: ["ई-कॉमर्स / वेब ऐप", "पूर्ण कस्टम डेवलपमेंट", "बहुभाषी समर्थन", "निरंतर रखरखाव", "प्राथमिकता डिलीवरी", "समर्पित संपर्क"],
     plan_3_cta: "बात करें",
 
+    // Portfolio
+    portfolio_label: "हमारा पोर्टफोलियो",
+    portfolio_title: "हमारे काम की एक झलक",
+    portfolio_desc: "इसे लाइव देखने के लिए किसी भी प्रोजेक्ट पर क्लिक करें।",
+    portfolio_view: "लाइव देखें →",
+    portfolio_1_title: "फ्लूइड सिमुलेशन",
+    portfolio_1_desc: "वेबजीएल इंटरेक्शन",
+    portfolio_2_title: "लिक्विड क्रोम",
+    portfolio_2_desc: "वेबजीएल 2.0 एनिमेशन",
+    portfolio_3_title: "वांटा वेपर",
+    portfolio_3_desc: "वेबजीएल स्मोक इफ़ेक्ट",
+    portfolio_4_title: "रूसी समुराई",
+    portfolio_4_desc: "जीएसएपी एनिमेशन",
+
     // Testimonials
     testimonials_label: "क्लाइंट की कहानियां",
     testimonials_title: "हमारे क्लाइंट क्या कहते हैं",
@@ -457,6 +502,7 @@ export const translations = {
     nav_cta: "தொடங்குங்கள்",
 
     // Hero
+    hero_shrinex: "ஸ்ரினெக்ஸ்",
     hero_label: "வலை வடிவமைப்பு நிறுவனம் — ஆந்திரப் பிரதேசம்",
     hero_cta_primary: "இலவச அழைப்பை முன்பதிவு செய்க",
     hero_cta_secondary: "எங்கள் சேவைகளை காண்க",
@@ -565,6 +611,20 @@ export const translations = {
     plan_3_price: "தனிப்பயன் விலை",
     plan_3_features: ["மின் வணிகம் / வலைப் பயன்பாடு", "முழு தனிப்பயன் மேம்பாடு", "பல மொழி ஆதரவு", "தொடர்ச்சியான பராமரிப்பு", "முன்னுரிமை விநியோகம்", "தனிப்பட்ட தொடர்பாளர்"],
     plan_3_cta: "பேசுவோம்",
+
+    // Portfolio
+    portfolio_label: "எங்கள் போர்ட்ஃபோலியோ",
+    portfolio_title: "எங்கள் பணிகளைப் பாருங்கள்",
+    portfolio_desc: "லைவ்-ஆக காண ஏதேனும் ப்ராஜெக்ட்டை கிளிக் செய்யவும்.",
+    portfolio_view: "லைவ் காண்க →",
+    portfolio_1_title: "ஃப்ளூயிட் சிமுலேஷன்",
+    portfolio_1_desc: "வெப்ஜிஎல் இன்டராக்ஷன்",
+    portfolio_2_title: "லிக்விட் குரோம்",
+    portfolio_2_desc: "வெப்ஜிஎல் 2.0 அனிமேஷன்",
+    portfolio_3_title: "வாண்டா வேப்பர்",
+    portfolio_3_desc: "வெப்ஜிஎல் ஸ்மோக் எஃபெக்ட்",
+    portfolio_4_title: "ரஷ்ய சமுராய்",
+    portfolio_4_desc: "ஜிஎஸ்ஏபி அனிமேஷன்",
 
     // Testimonials
     testimonials_label: "வாடிக்கையாளர் கதைகள்",
