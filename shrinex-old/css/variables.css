@@ -1,0 +1,56 @@
+:root {
+  /* Primary System (Dark Base) */
+  --color-bg-primary: #000000;
+  --color-bg-secondary: #090909;
+  --color-bg-card: #0D0D0D;
+  --color-bg-panel: #1A1A1A;
+  --color-border-subtle: #131313;
+  --color-border-default: #1A1A1A;
+  --color-border-mid: #282828;
+  --color-border-strong: #404040;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #98989E;
+  --color-text-muted: #6B6D70;
+  --color-text-silver: #B7B7BC;
+  
+  /* Accent System */
+  --color-accent: #FF771C;
+  --color-accent-cream: #F5EDE0;
+  --color-accent-dark: #161311;
+  --color-accent-blue: #546877;
+  --color-accent-dim: rgba(255,119,28,0.08);
+  --color-accent-border: rgba(255,119,28,0.2);
+
+  /* Typography */
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'Syne Mono', monospace;
+
+  /* Easing & Transitions */
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 200ms var(--ease-smooth);
+  --transition-default: 300ms var(--ease-smooth);
+  --transition-slow: 700ms var(--ease-smooth);
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Spacing Grid (Multiples of 8) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-10: 80px;
+  --space-12: 96px;
+  --space-15: 120px;
+
+  /* Layout Variables */
+  --container-max: 1280px;
+  --container-padding: 80px;
+  --text-max-width: 640px;
+}

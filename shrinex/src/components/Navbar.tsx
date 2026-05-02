@@ -57,7 +57,7 @@ export default function Navbar() {
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-6">
           <div className="flex gap-2 items-center">
-            {(["en", "te", "hi"] as const).map((l) => (
+            {(["en", "te", "hi", "ta"] as const).map((l) => (
               <button
                 key={l}
                 onClick={() => setLang(l)}
@@ -75,7 +75,7 @@ export default function Navbar() {
                 onMouseEnter={(e) => { if (lang !== l) e.currentTarget.style.color = "#FF771C"; }}
                 onMouseLeave={(e) => { if (lang !== l) e.currentTarget.style.color = "#FFFFFF"; }}
               >
-                {l === "en" ? "EN" : l === "te" ? "తె" : "हि"}
+                {l === "en" ? "EN" : l === "te" ? "తె" : l === "hi" ? "हि" : "த"}
               </button>
             ))}
           </div>
@@ -112,7 +112,7 @@ export default function Navbar() {
           <Link href="#contact" onClick={() => setMobileMenuOpen(false)} className="font-body text-[18px] font-medium text-text-primary">{t(lang, "nav_contact")}</Link>
           <div className="w-full px-6 flex justify-between items-center pt-4 border-t border-border-subtle">
             <div className="flex gap-2 items-center">
-              {(["en", "te", "hi"] as const).map((l) => (
+              {(["en", "te", "hi", "ta"] as const).map((l) => (
                 <button
                   key={l}
                   onClick={() => {
@@ -133,7 +133,7 @@ export default function Navbar() {
                   onMouseEnter={(e) => { if (lang !== l) e.currentTarget.style.color = "#FF771C"; }}
                   onMouseLeave={(e) => { if (lang !== l) e.currentTarget.style.color = "#FFFFFF"; }}
                 >
-                  {l === "en" ? "EN" : l === "te" ? "తె" : "हि"}
+                  {l === "en" ? "EN" : l === "te" ? "తె" : l === "hi" ? "हि" : "த"}
                 </button>
               ))}
             </div>

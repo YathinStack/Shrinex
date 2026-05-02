@@ -25,7 +25,11 @@ export default function Contact() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    let value = e.target.value;
+    if (e.target.name === "phone") {
+      value = value.replace(/[^\d+]/g, "");
+    }
+    setForm({ ...form, [e.target.name]: value });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -123,17 +127,7 @@ export default function Contact() {
                 </span>
               </div>
             </div>
-            <div className="flex items-center gap-4">
-              <div
-                className="flex items-center justify-center w-10 h-10 rounded-lg flex-shrink-0"
-                style={{ background: "#111111", border: "1px solid #1A1A1A" }}
-              >
-                <Mail size={18} style={{ color: "#FF771C" }} />
-              </div>
-              <span className="font-body text-[15px] text-text-secondary">
-                hello@shrinex.in
-              </span>
-            </div>
+
             <div className="flex items-center gap-4">
               <div
                 className="flex items-center justify-center w-10 h-10 rounded-lg flex-shrink-0"

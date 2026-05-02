@@ -18,7 +18,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const saved = localStorage.getItem("shrinex-lang") as Language;
-    if (saved && ["en", "te", "hi"].includes(saved)) setLangState(saved);
+    if (saved && ["en", "te", "hi", "ta"].includes(saved)) setLangState(saved);
   }, []);
 
   const setLang = (l: Language) => {
