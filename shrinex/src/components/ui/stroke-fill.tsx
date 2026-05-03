@@ -10,16 +10,16 @@ interface StrokeFillProps {
 export default function StrokeFill({ text = "SHRINEX", duration = 3 }: StrokeFillProps) {
   return (
     <div className="w-full flex items-center justify-center">
-      <svg viewBox="0 0 1600 400" overflow="visible" className="w-full h-auto">
+      <svg viewBox="0 0 2400 400" overflow="visible" className="w-full h-auto">
         <motion.text
           x="50%"
           y="50%"
           textAnchor="middle"
           dominantBaseline="middle"
-          fontSize="220"
+          fontSize="240"
           fontWeight="900"
-          strokeWidth="2.5"
-          letterSpacing="12"
+          strokeWidth="3"
+          letterSpacing="24"
           stroke="#FFFFFF"
           fill="transparent"
           style={{ fontFamily: "'Aurellis', var(--font-display), sans-serif", fontWeight: 900 }}

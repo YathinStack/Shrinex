@@ -77,7 +77,7 @@ export default function Hero() {
       />
 
       {/* Brand Name */}
-      <div className="relative z-10 text-center px-4">
+      <div className="relative z-10 text-center px-4 w-full max-w-[1280px]">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
