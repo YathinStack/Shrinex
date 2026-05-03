@@ -110,8 +110,8 @@ export default function Navbar() {
           <Link href="#process" onClick={() => setMobileMenuOpen(false)} className="font-body text-[18px] font-medium text-text-primary">{t(lang, "nav_process")}</Link>
           <Link href="#pricing" onClick={() => setMobileMenuOpen(false)} className="font-body text-[18px] font-medium text-text-primary">{t(lang, "nav_pricing")}</Link>
           <Link href="#contact" onClick={() => setMobileMenuOpen(false)} className="font-body text-[18px] font-medium text-text-primary">{t(lang, "nav_contact")}</Link>
-          <div className="w-full px-6 flex justify-between items-center pt-4 border-t border-border-subtle">
-            <div className="flex gap-2 items-center">
+          <div className="w-full px-6 flex flex-col gap-4 justify-center items-center pt-4 border-t border-border-subtle pb-2">
+            <div className="flex gap-4 items-center">
               {(["en", "te", "hi", "ta"] as const).map((l) => (
                 <button
                   key={l}
@@ -140,7 +140,7 @@ export default function Navbar() {
             <Link
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="font-body font-semibold text-[15px] px-6 py-2 rounded-md transition-colors duration-200"
+              className="w-full text-center font-body font-semibold text-[15px] px-6 py-3 rounded-md transition-colors duration-200"
               style={{ background: "#FFFFFF", color: "#000000" }}
               onMouseEnter={(e) => { e.currentTarget.style.background = "#FF771C"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "#FFFFFF"; }}
