@@ -23,7 +23,7 @@ export function GlassDockDemo() {
   ];
 
   return (
-    <div className="fixed left-4 top-1/2 -translate-y-1/2 z-[100] flex flex-col items-center">
+    <div className="hidden md:flex fixed left-4 top-1/2 -translate-y-1/2 z-[100] flex-col items-center">
       <GlassDock items={items} direction="vertical" />
     </div>
   );

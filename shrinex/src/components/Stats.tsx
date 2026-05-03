@@ -61,23 +61,20 @@ export default function Stats() {
         borderBottom: "1px solid #131313",
       }}
     >
-      <div
-        className="max-w-[1280px] mx-auto px-20 grid grid-cols-4 gap-0"
-        style={{ gridTemplateColumns: "repeat(4, 1fr)" }}
-      >
+      <div className="max-w-[1280px] mx-auto px-6 md:px-20 grid grid-cols-2 md:grid-cols-4">
         {stats.map((stat, i) => (
           <div
             key={i}
-            className="flex flex-col items-center justify-center py-8 text-center"
-            style={{
-              borderRight: i < stats.length - 1 ? "1px solid #1A1A1A" : "none",
-            }}
+            className={`flex flex-col items-center justify-center py-10 md:py-8 text-center border-[#1A1A1A] 
+              ${i % 2 === 0 ? "border-r" : ""} 
+              ${i < 2 ? "border-b md:border-b-0" : ""} 
+              md:border-r md:[&:last-child]:border-r-0`}
           >
             <span
               className="font-bold"
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "56px",
+                fontSize: "clamp(40px, 8vw, 56px)",
                 color: "#FF771C",
                 lineHeight: 1.1,
               }}

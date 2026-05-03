@@ -3,7 +3,6 @@ import { Syne, DM_Sans, Syne_Mono, Geist } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import { LanguageProvider } from "@/lib/LanguageContext";
 import { GlassDockDemo } from '@/components/ui/glass-dock-demo';
-import DesktopPrompt from '@/components/DesktopPrompt';
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
@@ -40,7 +39,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn("dark scroll-smooth", syne.variable, dmSans.variable, syneMono.variable, "font-sans", geist.variable)}>
       <body className="antialiased bg-bg-primary text-text-primary">
-        <DesktopPrompt />
         <LanguageProvider>
           <Navbar />
           <GlassDockDemo />

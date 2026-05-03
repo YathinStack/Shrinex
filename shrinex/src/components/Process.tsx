@@ -55,11 +55,11 @@ export default function Process() {
 
         <div className="relative">
           {/* Grey base line */}
-          <div className="absolute left-[28px] md:left-[50%] top-4 bottom-4 w-px bg-border-mid md:-translate-x-1/2 hidden sm:block" />
+          <div className="absolute left-[28px] md:left-[50%] top-4 bottom-4 w-px bg-border-mid md:-translate-x-1/2 block" />
 
           {/* Orange scroll-fill line */}
           <motion.div
-            className="absolute left-[28px] md:left-[50%] top-4 bottom-4 w-px md:-translate-x-1/2 hidden sm:block"
+            className="absolute left-[28px] md:left-[50%] top-4 bottom-4 w-px md:-translate-x-1/2 block"
             style={{ scaleY: lineScaleY, transformOrigin: "top", background: "#FF771C" }}
           />
 
