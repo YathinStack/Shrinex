@@ -10,7 +10,7 @@ interface StrokeFillProps {
 export default function StrokeFill({ text = "SHRINEX", duration = 3 }: StrokeFillProps) {
   return (
     <div className="w-full flex items-center justify-center">
-      <svg viewBox="0 0 1200 380" overflow="visible" className="w-full h-auto">
+      <svg viewBox="0 0 1600 400" overflow="visible" className="w-full h-auto">
         <motion.text
           x="50%"
           y="50%"
