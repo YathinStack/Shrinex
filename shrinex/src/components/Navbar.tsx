@@ -47,16 +47,16 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
-          <Link href="#services" className="font-body text-[15px] font-medium text-white hover:text-[#FF771C] transition-colors">{t(lang, "nav_services")}</Link>
-          <Link href="#process" className="font-body text-[15px] font-medium text-white hover:text-[#FF771C] transition-colors">{t(lang, "nav_process")}</Link>
-          <Link href="#pricing" className="font-body text-[15px] font-medium text-white hover:text-[#FF771C] transition-colors">{t(lang, "nav_pricing")}</Link>
-          <Link href="#contact" className="font-body text-[15px] font-medium text-white hover:text-[#FF771C] transition-colors">{t(lang, "nav_contact")}</Link>
+        <nav className="hidden lg:flex items-center gap-8">
+          <Link href="#services" className="font-body text-[15px] font-medium text-white hover:text-[#FF771C] transition-colors whitespace-nowrap">{t(lang, "nav_services")}</Link>
+          <Link href="#process" className="font-body text-[15px] font-medium text-white hover:text-[#FF771C] transition-colors whitespace-nowrap">{t(lang, "nav_process")}</Link>
+          <Link href="#pricing" className="font-body text-[15px] font-medium text-white hover:text-[#FF771C] transition-colors whitespace-nowrap">{t(lang, "nav_pricing")}</Link>
+          <Link href="#contact" className="font-body text-[15px] font-medium text-white hover:text-[#FF771C] transition-colors whitespace-nowrap">{t(lang, "nav_contact")}</Link>
         </nav>
 
         {/* Desktop Actions */}
-        <div className="hidden md:flex items-center gap-6">
-          <div className="flex gap-2 items-center">
+        <div className="hidden lg:flex items-center gap-6">
+          <div className="flex gap-2 items-center flex-shrink-0">
             {(["en", "te", "hi", "ta"] as const).map((l) => (
               <button
                 key={l}
@@ -81,7 +81,7 @@ export default function Navbar() {
           </div>
           <Link
             href="#contact"
-            className="font-body font-semibold text-[15px] px-6 py-2.5 rounded-md transition-colors duration-200"
+            className="font-body font-semibold text-[15px] px-6 py-2.5 rounded-md transition-colors duration-200 whitespace-nowrap flex-shrink-0"
             style={{ background: "#FFFFFF", color: "#000000" }}
             onMouseEnter={(e) => { e.currentTarget.style.background = "#FF771C"; e.currentTarget.style.color = "#000000"; }}
             onMouseLeave={(e) => { e.currentTarget.style.background = "#FFFFFF"; e.currentTarget.style.color = "#000000"; }}
@@ -92,7 +92,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden text-text-primary p-2"
+          className="lg:hidden text-text-primary p-2 flex-shrink-0"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -101,8 +101,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div 
-        className={`md:hidden absolute top-full left-0 w-full bg-bg-primary border-b border-border-subtle overflow-hidden transition-all duration-300 ${
-          mobileMenuOpen ? 'max-h-[400px] py-4' : 'max-h-0 py-0 border-transparent'
+        className={`lg:hidden absolute top-full left-0 w-full bg-bg-primary border-b border-border-subtle overflow-hidden transition-all duration-300 ${
+          mobileMenuOpen ? 'max-h-[500px] py-4' : 'max-h-0 py-0 border-transparent'
         }`}
       >
         <nav className="flex flex-col items-center gap-6">
